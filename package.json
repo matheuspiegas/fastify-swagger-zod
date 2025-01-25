@@ -1,0 +1,23 @@
+{
+  "name": "fastify-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.1",
+    "@types/node": "^22.10.10",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "zod": "^3.24.1"
+  }
+}
