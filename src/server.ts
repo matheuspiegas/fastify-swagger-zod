@@ -10,6 +10,7 @@ import {
 import { routes } from "./routes";
 
 const app = fastify();
+const port = Number(process.env.PORT) || 3333;
 
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
@@ -28,5 +29,5 @@ app.register(fastifySwaggerUi, { routePrefix: "/docs" });
 app.register(routes);
 
 app
-	.listen({ port: 3333 })
+	.listen({ port, host: "0.0.0.0"})
 	.then(() => console.log("Server is running on port 3333"));
